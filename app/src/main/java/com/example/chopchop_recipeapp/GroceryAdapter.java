@@ -1,13 +1,11 @@
 package com.example.chopchop_recipeapp;
 
 import android.content.Context;
-import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
 import android.widget.ImageView;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -41,7 +39,7 @@ public class GroceryAdapter extends RecyclerView.Adapter<GroceryHolder> {
     @NonNull
     @Override
     public GroceryHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.row,null);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.g_row,null);
 
         return new GroceryHolder(view);
     }
